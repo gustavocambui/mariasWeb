@@ -42,7 +42,7 @@ function Navbar() {
                         <Link to="sobreNos" className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                             <Typography variant="h6" color="inherit">
-                                Sobre Nós
+                                sobre nós
                             </Typography>
                         </Box>
                         
