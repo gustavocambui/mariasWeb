@@ -8,7 +8,7 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-            <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#8f1f37"}}>
+            <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019"}}>
                     <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
                         <Typography variant="h5" color="inherit">
                             Marias Web

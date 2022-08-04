@@ -6,7 +6,7 @@ function Sobre () {
 
   return (
     <Grid container direction='row' justifyContent='center' alignItems='center'>
-    <Grid alignItems='center' xs={6} style={{backgroundColor: "#fbf3ed"}}>
+    <Grid alignItems='center' xs={6} >
        <Box paddingX={20} >
        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' style={{fontWeight: 'bold'}}>Sobre Nós </Typography>
        </Box>

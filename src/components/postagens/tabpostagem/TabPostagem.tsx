@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { AppBar, Tab, Tabs, Typography} from "@material-ui/core"
+import { AppBar, Tab, Tabs, Typography } from "@material-ui/core"
 import { TabContext, TabPanel } from "@material-ui/lab";
 import ListaPostagem from "../listapostagem/ListaPostagem";
 import { Box } from "@mui/material";
@@ -13,10 +13,10 @@ function TabPostagem() {
   return (
     <>
       <TabContext value={value}>
-        <AppBar position="static">
+        <AppBar position="static" className="tab-barra">
           <Tabs centered indicatorColor="secondary" onChange={handleChange}>
-            <Tab label="Todas as postagens" value="1" />
-            <Tab label="Sobre-nós" value="2" />
+            <Tab label="Todas as postagens" value="1" className="titulo" />
+            <Tab label="Sobre-nós" value="2" className="titulo" />
           </Tabs>
         </AppBar>
         <TabPanel value="1" >
@@ -25,7 +25,7 @@ function TabPostagem() {
           </Box>
         </TabPanel>
         <TabPanel value="2">
-        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
+          <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className="titulo">Sobre-nós</Typography>
           <Typography variant="body1" gutterBottom color="textPrimary" align="justify"></Typography>
         </TabPanel>
       </TabContext>

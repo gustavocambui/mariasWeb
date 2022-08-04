@@ -2,3 +2,13 @@
   text-decoration: none;
   color: white;
 }
+
+.barra {
+  background: rgb(39, 63, 64);
+  background: linear-gradient(
+    90deg,
+    rgba(39, 63, 64, 1) 0%,
+    rgba(239, 189, 158, 1) 35%,
+    rgba(168, 70, 56, 1) 100%
+  );
+}
