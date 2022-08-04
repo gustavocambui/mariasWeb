@@ -6,7 +6,7 @@ import './Login.css';
 function Login() {
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
+        <Grid container direction='row' justifyContent='center' alignItems='center' style={{backgroundColor: ""}}>
             <Grid alignItems='center' xs={6}>
                 <Box paddingX={20}>
                     <form>
@@ -15,7 +15,7 @@ function Login() {
                         <TextField id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password'fullWidth />
                         <Box marginTop={2} textAlign='center'>
                             <Link to='/home' className='text-decorator-none'>
-                                <Button type='submit' variant='contained' color='primary'>
+                                <Button type='submit' variant='contained' color='primary' style={{borderRadius: '20px', backgroundColor:"#8f1f37"}}>
                                     Logar
                                 </Button>
                             </Link>

@@ -8,49 +8,51 @@ function Navbar() {
     return (
         <>
             <AppBar position="static">
-                <Toolbar variant="dense">
-                    <Box style={{ cursor: "pointer" }} >
+            <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#8f1f37"}}>
+                    <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
                         <Typography variant="h5" color="inherit">
                             Marias Web
                         </Typography>
-                    </Box>
 
-                    <Box display="flex" justifyContent="start">
-                    <Link to="home" className='text-decorator-none'>
+                        <Link to="home" className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                home
+                                Home
                             </Typography>
                         </Box>
                     </Link>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                postagens
+                                Postagens
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                temas
+                                Temas
                             </Typography>
                         </Box>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
-                                cadastrar tema
+                                Cadastrar Tema
                             </Typography>
                         </Box>
 
                         <Link to="sobreNos" className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                             <Typography variant="h6" color="inherit">
-                                sobre nós
+                                Sobre Nós
                             </Typography>
                         </Box>
                         
                         </Link>
+                    </Box>
+
+                    <Box display="flex" justifyContent="start">
+                    
                         <Link to="login" className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                             <Typography variant="h6" color="inherit">
-                                logout
+                                Logout
                             </Typography>
                         </Box>
                         
