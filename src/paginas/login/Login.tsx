@@ -75,7 +75,7 @@ function Login() {
                 </Box>
             </Grid>
             <Grid xs={6} style={{
-                backgroundImage: `url(https://i.imgur.com/d5bMdDJ.jpg)`,
+                backgroundImage: `url(https://img.freepik.com/vetores-premium/desenhos-de-mulheres-de-negocios-com-arquivos-na-frente-do-escritorio-design-de-mesa-de-reuniao-gestao-de-negocios-e-tema-corporativo_24911-60679.jpg?w=2000)`,
                 backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
             }}>
 

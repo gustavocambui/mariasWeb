@@ -1,5 +1,5 @@
 .imagem2 {
-  background-image: url(https://i.imgur.com/6NgpMil.png);
+  background-image: url(https://img.freepik.com/vetores-premium/desenhos-de-mulheres-de-negocios-com-arquivos-na-frente-do-escritorio-design-de-mesa-de-reuniao-gestao-de-negocios-e-tema-corporativo_24911-60679.jpg?w=2000);
   background-repeat: no-repeat;
   width: 100vh;
   min-height: 100vh;
@@ -13,4 +13,15 @@
 
 .btnCancelar {
   margin-right: 20px !important;
+  border-color: white;
+  border-radius: 20px!important;
+  background-color: #d2a5af!important;
+  color: white;
+}
+
+.btnCadastrar{
+  border-color: white;
+  border-radius: 20px!important;
+  background-color: #8f1f37!important;
+  color: white;
 }

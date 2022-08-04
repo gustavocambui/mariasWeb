@@ -87,11 +87,11 @@ function CadastroUsuario() {
             <TextField value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="foto" variant="outlined" name="foto" margin="normal" fullWidth />
             <Box marginTop={2} textAlign="center">
               <Link to="/login" className="text-decorator-none">
-                <Button variant="contained" color="secondary" className="btnCancelar">
+                <Button variant="contained" color="secondary" className="btnCancelar" >
                   Cancelar
                 </Button>
               </Link>
-              <Button type="submit" variant="contained" color="primary">
+              <Button type="submit" variant="contained" color="primary" className="btnCadastrar">
                 Cadastrar
               </Button>
             </Box>
