@@ -1,6 +1,7 @@
 import React from 'react';
 import {Typography, Grid, Button} from '@material-ui/core';
 import { Box } from '@mui/material';
+import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem"
 import './Home.css';
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
                     <img src="https://media.discordapp.net/attachments/993484965914345526/1004734424870555719/WhatsApp_Image_2022-08-04_at_09.53.00-removebg-preview.png" alt="" width='700px' height='500px' />
                 </Grid>
                 <Grid xs={12} className='postagens'>
+                    <TabPostagem />
                 </Grid>
             </Grid>
         </>
