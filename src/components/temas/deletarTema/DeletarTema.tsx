@@ -41,7 +41,7 @@ function DeletarTema() {
       }
 
       function sim() {
-          history('/temas')
+          history('/tema')
           deleteId(`/tema/${id}`, {
             headers: {
               'Authorization': token
@@ -51,7 +51,7 @@ function DeletarTema() {
         }
       
         function nao() {
-          history('/temas')
+          history('/tema')
         }
         
           

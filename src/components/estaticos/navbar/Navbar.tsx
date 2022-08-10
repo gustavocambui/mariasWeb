@@ -43,7 +43,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/postagens' className='text-decorator-none'>
+                        <Link to='/posts' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Postagens
@@ -51,13 +51,14 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/temas' className='text-decorator-none'>
+                        <Link to='/tema' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Temas
                                 </Typography>
                             </Box>
                         </Link>
+                        
                         <Link to='/formularioTema' className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">

@@ -29,8 +29,8 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/sobreNos" element={<Sobre />} />
           <Route path="/cadastrousuario" element={<CadastroUsuario />} />
-          <Route path="/temas" element={<ListaTema />} />
-          <Route path="/postagens" element={<ListaPostagem />} />
+          <Route path="/tema" element={<ListaTema />} />
+          <Route path="/posts" element={<ListaPostagem />} />
 
           <Route path="/formularioPostagem/:id" element={<CadastroPost />} />
 

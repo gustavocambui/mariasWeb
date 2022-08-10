@@ -55,7 +55,7 @@ function CadastroTema() {
         e.preventDefault()
         console.log("tema " + JSON.stringify(tema))
 
-        if (id !== undefined) {
+        if (id != undefined) {
             console.log(tema)
             put(`/tema`, tema, setTema, {
                 headers: {
@@ -76,7 +76,7 @@ function CadastroTema() {
     }
 
     function back() {
-        history('/temas')
+        history('/tema')
     }
 
     return (
