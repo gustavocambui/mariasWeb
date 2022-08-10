@@ -67,6 +67,9 @@ function DeletarTema() {
               <Typography color="textSecondary">
                 {tema?.nome}
               </Typography>
+              <Typography color="textSecondary">
+                {tema?.descricao}
+              </Typography>
             </Box>
           </CardContent>
           <CardActions>

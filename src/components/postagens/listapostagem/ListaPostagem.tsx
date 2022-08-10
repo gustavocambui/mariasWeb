@@ -39,43 +39,48 @@ function ListaPostagem() {
 
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined">
-          <CardContent>
-            <Typography color="textSecondary" gutterBottom>
-              Postagens
-            </Typography>
-            <Typography variant="h5" component="h2">
-              Título
-            </Typography>
-            <Typography variant="body2" component="p">
-              Texto da Postagem
-            </Typography>
-            <Typography variant="body2" component="p">
-              Tema
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Box display="flex" justifyContent="center" mb={1.5}>
+      {
+        posts.map(post => (
+          <Box m={2}>
+            <Card variant="outlined">
+              <CardContent>
+                <Typography color="textSecondary" gutterBottom>
+                  Postagens
+                </Typography>
+                <Typography variant="h5" component="h2">
+                  {post.titulo}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.texto}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.tema?.nome}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Box display="flex" justifyContent="center" mb={1.5}>
 
-              <Link to= {'/formularioPostagem/${post.id}'}  className="text-decorator-none">
-                <Box mx={1}>
-                  <Button variant="contained" className="marginLeft" size="small" color="primary" style={{backgroundColor:"#dbaa53"}}>
-                    atualizar
-                  </Button>
+                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none">
+                    <Box mx={1}>
+                      <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#dbaa53" }}>
+                        atualizar
+                      </Button>
+                    </Box>
+                  </Link>
+                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                    <Box mx={1}>
+                      <Button variant="contained" size="small" color="secondary" style={{ backgroundColor: "#cf9d9c" }}>
+                        deletar
+                      </Button>
+                    </Box>
+                  </Link>
                 </Box>
-              </Link>
-              <Link to= {'/deletarPostagem/${post.id}'} className="text-decorator-none">
-                <Box mx={1}>
-                  <Button variant="contained" size="small" color="secondary" style={{backgroundColor:"#cf9d9c"}}>
-                    deletar
-                  </Button>
-                </Box>
-              </Link>
-            </Box>
-          </CardActions>
-        </Card>
-      </Box>
+              </CardActions>
+            </Card>
+          </Box>
+        ))
+      }
+
     </>
   )
 }

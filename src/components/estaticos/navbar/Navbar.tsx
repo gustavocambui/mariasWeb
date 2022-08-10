@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box } from '@mui/material';
 import { Toolbar, AppBar, Typography } from '@material-ui/core';
-import HomeIcon from '@mui/icons-material/Home';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
@@ -44,7 +43,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/posts' className='text-decorator-none'>
+                        <Link to='/postagens' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Postagens
