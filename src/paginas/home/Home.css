@@ -1,3 +1,7 @@
 .titulo{
     text-align: center;
 }
+
+.text-decorator-none {
+    text-decoration: none;
+}
