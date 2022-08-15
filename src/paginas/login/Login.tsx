@@ -72,37 +72,37 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center' style={{ backgroundColor: "" }}>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
-                    <form onSubmit={onSubmit}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className="texto1" >Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="usuario" label="usuario" variant="outlined" name="usuario" margin="normal" fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="senha" label="senha" variant="outlined" name="senha" margin="normal" type="password" fullWidth />
-                        <Box marginTop={2} textAlign="center">
-                            <Button type="submit" variant="contained" color="primary" style={{ borderColor: "white", borderRadius: "20px", backgroundColor: "#8f1f37", color: "white" }}>
-                                Logar
-                            </Button>
-                        </Box>
-                    </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to="/cadastrousuario">
-                            <Typography variant="subtitle1" gutterBottom align="center" style={{ fontWeight: 'bold' }} >Cadastre-se</Typography>
+        <Grid className='box-form' container direction='row' justifyContent='center' alignItems='center'>
+        <Grid xs={12} className="imagem centralizar" justifyContent='center' >
+        <Grid alignItems='center' xs={4} justifyContent='center' >
+            <Box paddingX={20} className='box'>
+                <form onSubmit={onSubmit} className='box'>
+                    <Typography style={{ color: 'white' }} variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className="textos">
+                        Login
+                    </Typography>
+                    <TextField style={{ backgroundColor: 'white' }} value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                    <TextField style={{ backgroundColor: 'white' }} value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                    <Box marginTop={2} textAlign='center'>
+                        <Button type='submit' variant='contained' color='primary' className='botao'>
+                            Login
+                        </Button>
+                        <b className="form-ou"> OU</b>
+                        <Link to='/cadastrousuario'>
+                            <Button type='submit' variant='contained' className='botao'>
+                           Cadastre-se
+                        </Button>
                         </Link>
                     </Box>
+                </form>
+                <Box display='flex' justifyContent='center' marginTop={2}>
+                    
+                       
                 </Box>
-            </Grid>
-            <Grid xs={6} style={{
-                backgroundImage: `url(https://media.discordapp.net/attachments/993494998597255249/1008726851109257282/resized_GettyImages-931281360.jpg)`,
-                backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
-            }}>
-
-            </Grid>
+            </Box>
         </Grid>
-    );
+        </Grid>
+    </Grid>
+);
 }
 
 export default Login;
