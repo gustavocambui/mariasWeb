@@ -8,7 +8,7 @@ function Sobre () {
     <Grid container direction='row' justifyContent='center' alignItems='center'>
     <Grid alignItems='center' xs={6} >
        <Box paddingX={20} >
-       <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' style={{fontWeight: 'bold'}}>Sobre Nós </Typography>
+       <Typography variant='h2' gutterBottom color='textPrimary' component='h2' align='center'>Sobre Nós </Typography>
        </Box>
       <Box paddingX={8}>
       <Typography variant='h6' gutterBottom color='textPrimary' component='h6' align='center'><p>Projeto baseado na ODS 5 que diz respeito a igualdade de gênero e  tem por objetivo acabar com a discriminação contra todas as mulheres e meninas. Escolhemos este tema pois, de acordo com uma pesquisa realizada pelo Programa das Nações Unidas para o Desenvolvimento (PNUD/ONU), o Brasil antes mesmo da pandemia perdeu seis posições no índice de Desigualdade de Gênero. Lembrando que o IDG leva em conta inserção de mulheres no mercado de trabalho, acesso à educação, direitos reprodutivos, dentre outros.</p>

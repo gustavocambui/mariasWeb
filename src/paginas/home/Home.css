@@ -1,7 +1,12 @@
+
 .titulo{
     text-align: center;
 }
 
 .text-decorator-none {
     text-decoration: none;
+}
+
+.MuiTypography-h2{
+  font-family: 'Dancing Script', cursive!important;
 }

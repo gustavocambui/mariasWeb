@@ -40,14 +40,11 @@ function Navbar() {
             <AppBar position="static">
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019" }}>
                     <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            Marias Web
-                        </Typography>
 
                         <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    Home
+                                Maria's Web
                                 </Typography>
                             </Box>
                         </Link>
