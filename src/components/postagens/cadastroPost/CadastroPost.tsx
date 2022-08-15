@@ -91,7 +91,7 @@ function CadastroPost() {
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
 
-        if (id != undefined) {
+        if (id !== undefined) {
             put(`/postagens`, postagem, setPostagem, {
                 headers: {
                     'Authorization': token
