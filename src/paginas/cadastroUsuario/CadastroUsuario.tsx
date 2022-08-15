@@ -5,6 +5,7 @@ import { cadastroUsuario } from "../../services/Service";
 import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import "./CadastroUsuario.css";
 
 function CadastroUsuario() {
@@ -57,15 +58,43 @@ function CadastroUsuario() {
 
       try {
         await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-        alert('Usuario cadastrado com sucesso');
+        toast.success("Usuário cadastrado com sucesso", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "dark",
+          progress: undefined,
+        });
       } catch (error) {
         console.log(`Error: ${error}`);
 
-        alert("Usuário já existente");
+        toast.error("Usúario já existente", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: false,
+          theme: "dark",
+          progress: undefined,
+        });
       }
 
     } else {
-      alert('Insira o minímo 8 caracteres na senha.');
+      const menssageError = confirmarSenha != user.senha ? "Senhas diferentes" : "Insira o minímo 8 caracteres na senha";
+      toast.error(menssageError, {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "dark",
+        progress: undefined,
+      });
 
       setUser({ ...user, senha: "" });
       setConfirmarSenha("");

@@ -7,7 +7,7 @@ import './Navbar.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { Action, addToken } from '../../../store/tokens/actions';
-
+import {toast} from "react-toastify";
 
 function Navbar() {
 
@@ -19,7 +19,16 @@ function Navbar() {
 
     function goLogout() {
         dispatch(addToken(''))
-        alert("Deslogando... Tchau, mô!")
+        toast.info("Usuario deslogado", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "dark",
+            progress: undefined,
+          });
         navigate('/login')
     }
 
@@ -31,14 +40,11 @@ function Navbar() {
             <AppBar position="static">
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019" }}>
                     <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            Marias Web
-                        </Typography>
 
                         <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    Home
+                                Maria's Web
                                 </Typography>
                             </Box>
                         </Link>
