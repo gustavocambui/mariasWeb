@@ -1,22 +1,46 @@
-import React from 'react';
-import {Typography, Grid, Button} from '@material-ui/core';
+import React, { useEffect } from 'react';
+import { Typography, Grid, Button } from '@material-ui/core';
 import { Box } from '@mui/material';
 import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem"
+import { Link, useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 import './Home.css';
+import { TokenState } from '../../store/tokens/tokensReducer';
+import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import { toast } from 'react-toastify';
 
 function Home() {
+
+    let navigate = useNavigate()
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+
+    useEffect(() => {
+        if (token == "") {
+            toast.error("Você precisa estar logado")
+            navigate("/login")
+        }
+    }, [token])
     return (
         <>
-            <Grid container direction='row' justifyContent='center' alignItems='center' className='caixa' style={{backgroundColor: '#fbf3ed'}}>
+            <Grid container direction='row' justifyContent='center' alignItems='center' className='caixa' style={{ backgroundColor: '#fbf3ed' }}>
                 <Grid alignItems='center' item xs={6} >
                     <Box paddingX={20} >
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='titulo'>Seja bem-vinda!</Typography>
-                        <Typography variant='h5' gutterBottom color='textPrimary' component='h5' align='center' className='titulo'>expresse aqui os seus pensamentos e opiniões!</Typography>
+                        <Typography variant='h2' gutterBottom color='textPrimary' component='h2' align='center' className='stilo-fonte' >Inspire outras mulheres!</Typography>
+                        <Typography variant='h6' gutterBottom color='textPrimary' component='h6' align='center' className='titulo'>Compartilhe aqui seus relatos de sucesso e superação</Typography>
                     </Box>
                     <Box display='flex' justifyContent='center'>
                         <Box marginRight={1}>
+
+
+                            <ModalPostagem />
                         </Box>
-                        <Button variant='outlined' className='botao' style={{borderRadius: '20px', backgroundColor:'#8f1f37', color: 'white'}}>Ver Postagens</Button>
+                        <Link to="/posts">
+                            <Button variant='outlined' className='botao' style={{ backgroundColor: '#8f1f37', color: 'white' }}>Ver Postagens </Button>
+                        </Link>
+
                     </Box>
                 </Grid>
                 <Grid item xs={6} >

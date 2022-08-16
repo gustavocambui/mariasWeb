@@ -1,23 +1,50 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
 import { Box } from '@mui/material';
-import { Link } from 'react-router-dom'
-import './Navbar.css';
+import { Toolbar, AppBar, Typography } from '@material-ui/core';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './Navbar.css'
+import { useDispatch, useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { Action, addToken } from '../../../store/tokens/actions';
+import {toast} from "react-toastify";
 
 function Navbar() {
-    return (
-        <>
+
+    let navigate = useNavigate();
+    const dispatch = useDispatch();
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+
+    function goLogout() {
+        dispatch(addToken(''))
+        toast.info("Usuario deslogado", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "dark",
+            progress: undefined,
+          });
+        navigate('/login')
+    }
+
+    var navbarComponent;
+
+    if (token != "") {
+        navbarComponent =
+
             <AppBar position="static">
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019" }}>
                     <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
-                        <Typography variant="h5" color="inherit">
-                            Marias Web
-                        </Typography>
 
                         <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    Home
+                                Maria's Web
                                 </Typography>
                             </Box>
                         </Link>
@@ -30,19 +57,21 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/temas' className='text-decorator-none'>
+                        <Link to='/tema' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Temas
                                 </Typography>
                             </Box>
                         </Link>
-
+                        
+                        <Link to='/formularioTema' className='text-decorator-none'>
                         <Box mx={1} style={{ cursor: "pointer" }}>
                             <Typography variant="h6" color="inherit">
                                 Cadastrar Tema
                             </Typography>
                         </Box>
+                        </Link>
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
@@ -57,7 +86,7 @@ function Navbar() {
 
                         <Link to="login" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
-                                <Typography variant="h6" color="inherit">
+                                <Typography variant="h6" color="inherit" onClick={goLogout}>
                                     Logout
                                 </Typography>
                             </Box>
@@ -68,8 +97,18 @@ function Navbar() {
 
                 </Toolbar>
             </AppBar>
+
+    }
+    return (
+        <>
+            {navbarComponent}
         </>
     )
 }
 
 export default Navbar;
+
+function dispatch(arg0: Action) {
+    throw new Error('Function not implemented.');
+}
+

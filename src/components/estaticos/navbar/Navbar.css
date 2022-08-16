@@ -1,6 +1,7 @@
 .text-decorator-none {
   text-decoration: none;
   color: white;
+  padding: 10px;
 }
 
 .barra {
@@ -11,4 +12,9 @@
     rgba(239, 189, 158, 1) 35%,
     rgba(168, 70, 56, 1) 100%
   );
+}
+
+.espacamento{
+
+  padding-top: 1.5%;
 }

@@ -8,17 +8,17 @@ function Sobre () {
     <Grid container direction='row' justifyContent='center' alignItems='center'>
     <Grid alignItems='center' xs={6} >
        <Box paddingX={20} >
-       <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' style={{fontWeight: 'bold'}}>Sobre Nós </Typography>
+       <Typography variant='h2' gutterBottom color='textPrimary' component='h2' align='center'>Sobre Nós </Typography>
        </Box>
-      <Box paddingX={8}>
-      <Typography variant='h6' gutterBottom color='textPrimary' component='h6' align='center'><p>Projeto baseado na ODS 5 que diz respeito a igualdade de gênero e  tem por objetivo acabar com a discriminação contra todas as mulheres e meninas. Escolhemos este tema pois, de acordo com uma pesquisa realizada pelo Programa das Nações Unidas para o Desenvolvimento (PNUD/ONU), o Brasil antes mesmo da pandemia perdeu seis posições no índice de Desigualdade de Gênero. Lembrando que o IDG leva em conta inserção de mulheres no mercado de trabalho, acesso à educação, direitos reprodutivos, dentre outros.</p>
-      <p>Levando em conta os dados e índices citados anteriormente, pensamos em criar uma rede social direcionada para mulheres em que elas poderão compartilhar experiências, oportunidades de trabalho, serem direcionadas a canais de denúncias dentre outras opções, formando assim uma forte rede de apoio.</p> 
-      <p>O objetivo principal é formar uma rede segura de apoio e informação para que a mulher tenha conhecimento de seus direitos, se sinta amparada e segura para denunciar abusos e procurar ajuda quando necessário.</p>
+      <Box paddingX={15}>
+      <Typography variant='h6' gutterBottom color='textPrimary' component='h6' align='center'><p>Projeto baseado na ODS 5 que diz respeito a igualdade de gênero e tem por objetivo acabar com a discriminação contra todas as mulheres e meninas. 
+A Marias's Web é uma rede social direcionada para mulheres em que elas poderão compartilhar experiências positivas de situações que muitas mulheres já passaram ou estão passando, formando assim uma forte rede de apoio em que mulheres poderão se inspirar através de histórias de conquistas e superação.</p> 
+    
 </Typography>
       </Box>
             </Grid>
             <Grid xs={6} style={{
-                backgroundImage: `url(https://i.imgur.com/RJhk29Y.png)`,
+                backgroundImage: `url(https://media.discordapp.net/attachments/993494998597255249/1008801937795334234/unknown.png?width=924&height=1068)`,
                 backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
               }}>
       </Grid>
