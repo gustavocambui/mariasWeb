@@ -5,15 +5,15 @@ import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './Navbar.css'
 import { useDispatch, useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/tokensReducer';
 import { Action, addToken } from '../../../store/tokens/actions';
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
 
 function Navbar() {
 
     let navigate = useNavigate();
     const dispatch = useDispatch();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
@@ -28,7 +28,7 @@ function Navbar() {
             draggable: false,
             theme: "dark",
             progress: undefined,
-          });
+        });
         navigate('/login')
     }
 
@@ -44,7 +44,7 @@ function Navbar() {
                         <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                Maria's Web
+                                    Maria's Web
                                 </Typography>
                             </Box>
                         </Link>
@@ -64,14 +64,15 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        
-                        <Link to='/formularioTema' className='text-decorator-none'>
-                        <Box mx={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="h6" color="inherit">
-                                Cadastrar Tema
-                            </Typography>
-                        </Box>
+
+                        <Link to='/perfil' className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="h6" color="inherit">
+                                    Perfil
+                                </Typography>
+                            </Box>
                         </Link>
+
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
