@@ -10,3 +10,7 @@
 .MuiTypography-h2{
   font-family: 'Dancing Script', cursive!important;
 }
+
+.link-postagens{
+  text-decoration: none;
+}

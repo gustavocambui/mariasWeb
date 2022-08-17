@@ -37,8 +37,10 @@ function Home() {
 
                             <ModalPostagem />
                         </Box>
-                        <Link to="/posts">
-                            <Button variant='outlined' className='botao' style= {{ backgroundColor: '#8f1f37', color: 'white' }}>Ver Postagens </Button>
+                        <Link to="/posts" className="link-postagens">
+                            <Button variant='outlined' className='botao' style={{ backgroundColor: '#8f1f37', color: 'white' }}>
+                                Ver Postagens
+                            </Button>
                         </Link>
 
                     </Box>

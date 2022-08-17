@@ -113,7 +113,7 @@ function Login() {
                                     Login
                                 </Button>
                                 <b className="form-ou"> OU</b>
-                                <Link to='/cadastrousuario'>
+                                <Link to='/cadastrousuario' className="link-cadastro">
                                     <Button type='submit' variant='contained' className='botao'>
                                         Cadastre-se
                                     </Button>

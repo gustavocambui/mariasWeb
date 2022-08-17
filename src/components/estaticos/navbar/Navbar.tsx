@@ -44,9 +44,9 @@ function Navbar() {
 
             <AppBar position="static" >
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
-                    <Box display="flex" justifyContent="start" style={{ cursor: "pointer", alignItems: 'center' }} >
+                    <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
-                        <Link to="home" className='text-decorator-none'>
+                        <Link to="home" className='text-decorator-none '>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Maria's Web

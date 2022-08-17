@@ -30,7 +30,7 @@
   border-radius: 20px;
   background-color: #ef9aa8 !important;
   color: white;
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 .botao:hover {
@@ -58,4 +58,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-cadastro{
+  text-decoration: none;
 }

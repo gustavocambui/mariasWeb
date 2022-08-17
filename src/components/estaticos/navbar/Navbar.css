@@ -21,4 +21,9 @@
 
 .icones{
   align-items: center;
+  padding-right: 200px;
+}
+
+.logo{
+  padding-left: 200px;
 }
