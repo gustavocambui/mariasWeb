@@ -68,18 +68,11 @@ function Navbar() {
                         <Link to='/perfil' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    perfil
+                                    Perfil
                                 </Typography>
                             </Box>
                         </Link>
 
-                        <Link to='/formularioTema' className='text-decorator-none'>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="h6" color="inherit">
-                                    Cadastrar Tema
-                                </Typography>
-                            </Box>
-                        </Link>
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
