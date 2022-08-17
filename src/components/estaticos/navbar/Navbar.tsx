@@ -9,6 +9,11 @@ import { UserState } from '../../../store/tokens/tokensReducer';
 import { Action, addToken } from '../../../store/tokens/actions';
 import { toast } from "react-toastify";
 
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+
 function Navbar() {
 
     let navigate = useNavigate();
@@ -37,9 +42,9 @@ function Navbar() {
     if (token != "") {
         navbarComponent =
 
-            <AppBar position="static">
-                <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019" }}>
-                    <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
+            <AppBar position="static" >
+                <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
+                    <Box display="flex" justifyContent="start" style={{ cursor: "pointer", alignItems: 'center' }} >
 
                         <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
@@ -49,18 +54,34 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/posts' className='text-decorator-none'>
+                        {/* <Link to='/posts' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Postagens
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
-                        <Link to='/tema' className='text-decorator-none'>
+                        {/* <Link to='/tema' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Temas
+                                </Typography>
+                            </Box>
+                        </Link> */}
+
+
+
+
+
+                    </Box>
+
+                    <Box display="flex" justifyContent="start" className="icones">
+
+                    <Link to="home" className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="h6" color="inherit">
+                                   <HomeIcon/>
                                 </Typography>
                             </Box>
                         </Link>
@@ -68,27 +89,23 @@ function Navbar() {
                         <Link to='/perfil' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    Perfil
+                                    <AccountCircleIcon />
                                 </Typography>
                             </Box>
                         </Link>
-
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit">
-                                    Sobre Nós
+                                    <InfoIcon />
                                 </Typography>
                             </Box>
                         </Link>
-                    </Box>
-
-                    <Box display="flex" justifyContent="start">
 
                         <Link to="login" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit" onClick={goLogout}>
-                                    Logout
+                                   <PowerSettingsNewIcon/>
                                 </Typography>
                             </Box>
 

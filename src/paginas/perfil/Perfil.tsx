@@ -87,7 +87,7 @@ function Perfil() {
                     </Link>
                 </Box>
             </Grid >
-            <Grid item xs={8} direction="row" justifyContent="flex-end" alignItems="center">
+            <Grid item xs={6} direction="row" justifyContent="flex-end" alignItems="center">
                 <Box>
                     <ListaPostagem />
                 </Box>
