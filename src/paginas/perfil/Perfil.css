@@ -1,6 +1,7 @@
 .card-principal{
   background-color:  #efd2cc;
   height: 100vh;
+  background-size: cover;
 }
 
 .card-container-imagem{

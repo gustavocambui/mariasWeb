@@ -89,7 +89,7 @@ function CadastroPost() {
     }
 
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
-        e.preventDefault()
+         e.preventDefault()
 
         if (id !== undefined) {
             put(`/postagens`, postagem, setPostagem, {
