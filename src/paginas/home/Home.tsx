@@ -6,14 +6,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import './Home.css';
-import { TokenState } from '../../store/tokens/tokensReducer';
+import { UserState } from '../../store/tokens/tokensReducer';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import { toast } from 'react-toastify';
 
 function Home() {
 
     let navigate = useNavigate()
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
@@ -38,7 +38,7 @@ function Home() {
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts">
-                            <Button variant='outlined' className='botao' style={{ backgroundColor: '#8f1f37', color: 'white' }}>Ver Postagens </Button>
+                            <Button variant='outlined' className='botao' style= {{ backgroundColor: '#8f1f37', color: 'white' }}>Ver Postagens </Button>
                         </Link>
 
                     </Box>

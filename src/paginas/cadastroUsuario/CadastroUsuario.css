@@ -1,27 +1,61 @@
-.imagem2 {
-  background-image: url(https://blog.lg.com.br/wp-content/uploads/2021/06/controlador-e-operador-1.jpg);
+.botoes{
+  border-color: white !important;
+  border-radius: 20px !important;
+  background-color: #5D2019!important;
+  color: white !important;    
+}
+
+.botoes:hover{
+  background-color: #CEBCBA !important;
+}
+
+.textos2{
+  font-weight: bold !important;
+  color: white;
+}
+
+.texto2{
+  font-weight: bold !important;
+  color: white!important;
+  padding-bottom: 15px;
+  border-bottom: white solid 0.1px;
+}
+
+
+.box3{
+  background-color:#CEBCBA!important;
+  padding-top: 20px!important;
+  padding-bottom: 20px!important; 
+  border-radius: 150px!important; 
+  color: black!important;
+  margin-left: 20px;
+  margin-right: 20px;  
+  display: block;
+  box-sizing: border-box;
+  padding: 1.5rem!important;    
+  width: 500px;
+}
+
+.imagem2{
+  background-image: url(https://i.imgur.com/KtHAm1z.png);
   background-repeat: no-repeat;
   width: 100vh;
-  min-height: 96vh;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  background-size: 100%;
+  background-position: cover;
 }
 
-.textos2 {
-  font-weight: bold !important;
+.btnCancelar{
+  margin-right: 20px !important; 
 }
 
-.btnCancelar {
-  margin-right: 20px !important;
-  border-color: white;
-  border-radius: 20px!important;
-  background-color: #d2a5af!important;
-  color: white;
+.cor-fundo{
+  background-color: #faf9f6;
 }
 
-.btnCadastrar{
-  border-color: white;
-  border-radius: 20px!important;
-  background-color: #8f1f37!important;
-  color: white;
+.alinhar-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 700px;
 }
