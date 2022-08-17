@@ -5,13 +5,14 @@ import { Box } from "@mui/material";
 import "./ListaPostagem.css";
 import { useSelector } from "react-redux";
 import Postagem from "../../../models/Postagem";
-import { TokenState } from "../../../store/tokens/tokensReducer";
+import { UserState } from "../../../store/tokens/tokensReducer";
 import { busca } from "../../../services/Service";
 import { toast } from "react-toastify";
+import Perfil from "../../../paginas/perfil/Perfil";
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
   let navigate = useNavigate();
@@ -46,6 +47,7 @@ function ListaPostagem() {
     getPost()
 
   }, [posts.length])
+  console.log(posts)
 
   return (
     <>

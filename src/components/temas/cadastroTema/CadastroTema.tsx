@@ -5,13 +5,13 @@ import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Service';
 import './CadastroTema.css';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/tokensReducer';
 import { toast } from "react-toastify";
 
 function CadastroTema() {
-    let history = useNavigate();
+    let navigate = useNavigate();
     const { id } = useParams<{ id: string }>();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     ); 
 
@@ -33,7 +33,7 @@ function CadastroTema() {
                 theme: "dark",
                 progress: undefined,
             });
-            history("/login")
+            navigate("/login")
 
         }
     }, [token])
@@ -104,7 +104,7 @@ function CadastroTema() {
     }
 
     function back() {
-        history('/tema')
+        navigate('/tema')
     }
 
     return (

@@ -7,13 +7,13 @@ import Tema from '../../../models/Tema';
 import { Box } from '@mui/material';
 import './DeletarTema.css';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/tokens/tokensReducer';
 import { toast } from "react-toastify";
 
 function DeletarTema() {
   let history = useNavigate();
   const { id } = useParams<{ id: string }>();
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
   const [tema, setTema] = useState<Tema>()
