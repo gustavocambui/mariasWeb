@@ -47,7 +47,8 @@ function Navbar() {
                     <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
                         <Link to="home" className='text-decorator-none '>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Box mx={1} style={{ cursor: "pointer", display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '15px' }}>
+                                <img src="https://i.imgur.com/2qz7bq2.png" alt="Logo" width={'50px'} height={'50px'} />
                                 <Typography variant="h6" color="inherit">
                                     Maria's Web
                                 </Typography>

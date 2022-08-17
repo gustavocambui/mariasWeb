@@ -13,4 +13,56 @@
 
 .link-postagens{
   text-decoration: none;
+  padding-bottom: 200px;
+}
+
+.stilo-fonte{
+padding-top: 200px;
+}
+
+.postagens{
+  background-color:  #f9e9e9;
+}
+
+.margaret{
+  display: flex;
+  flex-direction: row;
+  justify-content: center!important;
+}
+
+.margaret-foto{
+  padding: 50px!important;
+}
+
+.margaret-texto{
+  justify-content: center;
+}
+
+
+.margaret-titulo{
+  padding-left: 200px;
+  font-size: 40px;
+}
+
+.margaret-tt{
+  padding-right: 20px;
+}
+
+.postagens-2{
+  background-color:  #fbf3ed;
+}
+
+.margaret-titulo2{
+  padding-left: 300px;
+  font-size: 40px;
+}
+
+.margaret-tt2{
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.margaret-foto2{
+  padding-top: 50px!important;
+  padding-bottom: 50px;
 }

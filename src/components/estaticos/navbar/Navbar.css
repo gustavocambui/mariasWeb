@@ -21,9 +21,14 @@
 
 .icones{
   align-items: center;
-  padding-right: 200px;
+  /* padding-right: 200px; */
 }
 
 .logo{
-  padding-left: 200px;
+  /* padding-left: 200px; */
+font-family: 'Dancing Script', cursive!important;
+}
+
+.MuiTypography-h2{
+  
 }
