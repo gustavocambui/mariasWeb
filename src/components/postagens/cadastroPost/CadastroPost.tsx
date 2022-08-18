@@ -125,11 +125,11 @@ function CadastroPost() {
             });
         }
         back()
-
+        
     }
 
     function back() {
-        navigate('/posts')
+        navigate('/perfil')
     }
 
     return (

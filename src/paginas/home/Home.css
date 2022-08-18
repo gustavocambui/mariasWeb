@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 .titulo{
     text-align: center;
@@ -65,4 +66,18 @@ padding-top: 200px;
 .margaret-foto2{
   padding-top: 50px!important;
   padding-bottom: 50px;
+}
+
+.inspiracoes {
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.inspiracoesTitulo {
+  border: black solid 0.2px;
+  padding: 25px;
+  border-radius: 50px;
 }

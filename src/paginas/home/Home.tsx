@@ -48,7 +48,13 @@ function Home() {
                 {/* <Grid item xs={6} >
                     <img src="https://media.discordapp.net/attachments/993484965914345526/1004734424870555719/WhatsApp_Image_2022-08-04_at_09.53.00-removebg-preview.png" alt="" width='700px' height='500px' />  */}
                 {/* </Grid>  */}
+
+
                 <Grid container xs={12} className='postagens'>
+
+                    <Grid item xs={12} className="inspiracoes">
+                        <h1 className="inspiracoesTitulo">Conheça histórias de mulheres inspiradoras</h1>
+                    </Grid>
 
                     <Grid item xs={6} className="margaret" >
 

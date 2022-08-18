@@ -18,9 +18,9 @@ function Footer() {
 
     if (token != "") {
         footerComponent = 
-        <Grid container direction="row" justifyContent="center" alignItems="center">
+        <Grid container direction="row" justifyContent="center" alignItems="center" className="row">
 
-        <Grid alignItems="center" item xs={12}>
+        <Grid alignItems="center" item xs={12} >
 
            
             <Box className="row"style={{backgroundColor: "#ef9aa8", height: "120px" }}>
@@ -34,12 +34,12 @@ function Footer() {
                 <Box>
 
 
-                <Box paddingLeft={'900px'} display="flex" alignItems="center" justifyContent="center">
+                <Box paddingLeft={'1000px'} display="flex" alignItems="center" justifyContent="flex-end">
                     <Typography variant="h6" align="center" gutterBottom style={{ color: "white" }}>
                        Redes sociais: 
                         </Typography>
                 </Box>
-                <Box paddingLeft={'900px'} display="flex" alignItems="center" justifyContent="center">
+                <Box paddingLeft={'1400px'} display="flex" alignItems="center" justifyContent="flex-end">
                     <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
                         <FacebookIcon style={{ fontSize: 30, color: "white" }} />
                     </a>

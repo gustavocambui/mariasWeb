@@ -8,7 +8,7 @@ import './Sobre.css'
 function Sobre() {
 
       return (
-            <Grid direction='column' justifyContent='center'>
+            <Grid direction='column' justifyContent='center' className="corSobre">
 
                   <Grid container direction='row' justifyContent='center' alignItems='center'>
 
@@ -53,26 +53,26 @@ function Sobre() {
                                     <Box className="contato-individual">
 
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/3cndQjC.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Andreia Karoline Santos
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedora Full-Stack
                                           </Box>
 
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/andreiaksantos/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://www.instagram.com/marias_web/" target="_blank">
+                                                <a href="https://www.instagram.com/deiakas/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/andreiakas" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>
@@ -81,25 +81,25 @@ function Sobre() {
 
                                     <Box className="contato-individual">
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/LY4j47Q.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Annie Santana
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedora Full-Stack
                                           </Box>
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/annie-santana-6995a2233/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://www.instagram.com/marias_web/" target="_blank">
+                                                <a href="https://www.instagram.com/annie.santts/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/AnnieSantts" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>
@@ -107,52 +107,52 @@ function Sobre() {
 
                                     <Box className="contato-individual">
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/J7zAhm5.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Glauber Prado
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedor Full-Stack
                                           </Box>
 
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/glauber-prado-2ba2651b8/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://www.instagram.com/marias_web/" target="_blank">
+                                                <a href="https://www.instagram.com/_glaauubeer_/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/Glauberdiasprado" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>
                                     </Box>
                                     <Box className="contato-individual">
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/HceJmLj.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Gustavo Cambuí
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedor Full-Stack
                                           </Box>
 
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/gustavocambui/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                                 <a href="https://www.instagram.com/marias_web/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/gustavocambui" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>
@@ -174,25 +174,25 @@ function Sobre() {
                                     <Box className="contato-individual2">
 
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/ZT27Fb3.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Mirian Regina Duarte
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedora Back-End
                                           </Box>
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/mirianduarte/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                                 <a href="https://www.instagram.com/marias_web/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/MirianDuarte" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>
@@ -201,7 +201,7 @@ function Sobre() {
 
                                     <Box className="contato-individual2">
                                           <Box >
-                                                <img className="foto-individual" src="https://media-exp1.licdn.com/dms/image/C4D03AQFM98ztSqf3vQ/profile-displayphoto-shrink_800_800/0/1659889423755?e=1666224000&v=beta&t=FkRPvD6Hd_93o1f79YGqJtxZMilKFqGRynULZQyumaA" alt="" width={'300px'} height={'300px'} />
+                                                <img className="foto-individual" src="https://i.imgur.com/VkjpLAG.jpg" alt="" width={'300px'} height={'300px'} />
                                           </Box>
 
                                           <Box className="nome-individual">
@@ -228,26 +228,26 @@ function Sobre() {
 
                                     <Box className="contato-individual2">
                                           <Box >
-                                                <img className="foto-individual" src="" alt="" />
+                                                <img className="foto-individual" src="https://i.imgur.com/miNNrvI.jpg" alt="" />
                                           </Box>
 
                                           <Box className="nome-individual">
 
-                                                seu nome
+                                                Wellington de Sousa Quadros
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                area que deseja
+                                                Desenvolvedor Full-Stack
                                           </Box>
 
                                           <Box>
-                                                <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                                                <a href="https://www.linkedin.com/in/wellington-quadros-724b09189/" target="_blank">
                                                       <LinkedinIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://www.instagram.com/marias_web/" target="_blank">
+                                                <a href="https://www.instagram.com/juninho_quadros91/" target="_blank">
                                                       <InstagramIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
-                                                <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                                                <a href="https://github.com/WellingtonQuadros91" target="_blank">
                                                       <GitHubIcon style={{ fontSize: 30, color: "black" }} />
                                                 </a>
                                           </Box>

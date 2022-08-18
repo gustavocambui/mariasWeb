@@ -76,12 +76,16 @@ function Perfil() {
 
                 </Box>
                 <Box className="button-container">
-                <ModalPostagem />
+                <Link to='/formularioPostagem' className='text-decorator-none'>
+                    <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#a9aea9" }}>
+                        Inserir nova postagem
+                    </Button>
+                    </Link>
                     {/* <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#dbaa53" }}>
                         Inserir nova postagem
                     </Button> */}
                     <Link to='/formularioTema' className='text-decorator-none'>
-                    <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#dbaa53" }}>
+                    <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#e14649" }}>
                         Inserir novo tema
                     </Button>
                     </Link>
