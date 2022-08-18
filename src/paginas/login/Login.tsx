@@ -99,7 +99,7 @@ function Login() {
 
     return (
         <Grid className='box-form' container direction='row' justifyContent='center' alignItems='center'>
-            <Grid xs={12} className="imagem centralizar" justifyContent='center' >
+            <Grid xs={12} className="imagem-login centralizar" justifyContent='center' >
                 <Grid alignItems='center' xs={4} justifyContent='center' >
                     <Box paddingX={20} className='box'>
                         <form onSubmit={onSubmit} className='box'>

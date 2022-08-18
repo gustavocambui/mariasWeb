@@ -47,8 +47,8 @@ function Sobre() {
                               </Box>
                         </Grid>
 
-                        <Grid item xs={12} >
-                              <Box className="equipe-contato1" >
+                        <Grid item xs={12} className="alinhamento">
+                              <Box className="equipe-contato1 alinhamento" >
 
                                     <Box className="contato-individual">
 
@@ -169,7 +169,7 @@ function Sobre() {
                         </Grid>
 
                         <Grid item xs={12} paddingTop={'30px'}>
-                              <Box className="equipe-contato" >
+                              <Box className="equipe-contato alinhamento" >
 
                                     <Box className="contato-individual2">
 
