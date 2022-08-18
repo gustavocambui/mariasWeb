@@ -46,9 +46,9 @@ function Navbar() {
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
                     <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
-                        <Link to="home" className='text-decorator-none '>
+                        <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '15px' }}>
-                                <img src="https://i.imgur.com/2qz7bq2.png" alt="Logo" width={'50px'} height={'50px'} />
+                                <img src="https://i.imgur.com/8QXUwf2.png" alt="Logo" width={'40px'} height={'40px'} />
                                 <Typography variant="h6" color="inherit">
                                     Maria's Web
                                 </Typography>
