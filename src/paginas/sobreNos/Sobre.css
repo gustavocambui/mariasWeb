@@ -6,3 +6,59 @@
   background-size: cover;
   background-position: center;
 }
+
+.equipe {
+  padding-top: 30px;
+  background-color: rgb(237, 230, 232);
+}
+
+.equipe-contato {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  margin-left: 100px;
+}
+
+.equipe-contato1 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding-left: 80px;
+  
+}
+
+.contato-individual {
+  /* border: black solid 2px; */
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contato-individual2 {
+  /* border: black solid 2px; */
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+  margin-bottom: 50px;
+}
+
+.foto-individual{
+  border-radius: 200px;
+  margin-bottom: 30px;
+  width: 250px!important;
+  height: 250px!important;
+}
+
+.nome-individual {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profissao-individual {
+  margin-bottom: 10px;
+}
