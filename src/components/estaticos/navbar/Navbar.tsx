@@ -13,6 +13,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import InfoIcon from '@mui/icons-material/Info';
 import HomeIcon from '@mui/icons-material/Home';
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import SettingsIcon from '@mui/icons-material/Settings';
 
 function Navbar() {
 
@@ -42,7 +44,7 @@ function Navbar() {
     if (token != "") {
         navbarComponent =
 
-            <AppBar  >
+            <AppBar position='static' >
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
                     <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
@@ -95,10 +97,26 @@ function Navbar() {
                             </Box>
                         </Link>
 
+                        <Link to="nada" className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
+                                <Typography variant="h6" color="inherit">
+                                    <EventAvailableIcon />
+                                </Typography>
+                            </Box>
+                        </Link>
+
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit">
                                     <InfoIcon />
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="nada" className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
+                                <Typography variant="h6" color="inherit">
+                                    <SettingsIcon />
                                 </Typography>
                             </Box>
                         </Link>
