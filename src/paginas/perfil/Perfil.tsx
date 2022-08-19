@@ -9,7 +9,6 @@ import { buscaId } from '../../services/Service'
 
 import './Perfil.css'
 import ListaPostagem from '../../components/postagens/listapostagem/ListaPostagem';
-import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 
 function Perfil() {
 
@@ -63,7 +62,7 @@ function Perfil() {
 
     return (
         <Grid container >
-            <Grid item xs={4} direction="row" className="card-principal">
+            <Grid item xs={3} direction="row" className="card-principal">
                 <Box className='card-container-info'>
                     <Box >
                         <h1>{user.nome}</h1>
@@ -71,29 +70,88 @@ function Perfil() {
 
                     <Avatar className='card-imagem'
                         src={user.foto || "https://i.imgur.com/7dkreWW.jpg"}
-                        sx={{width:150,height:150}}
+                        sx={{ width: 150, height: 150 }}
                         alt={user.nome} />
 
                 </Box>
                 <Box className="button-container">
-                <Link to='/formularioPostagem' className='text-decorator-none'>
-                    <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#a9aea9" }}>
-                        Inserir nova postagem
-                    </Button>
+                    <Link to='/formularioPostagem' className='text-decorator-none'>
+                        <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#a9aea9" }}>
+                            Inserir nova postagem
+                        </Button>
                     </Link>
                     {/* <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#dbaa53" }}>
                         Inserir nova postagem
                     </Button> */}
                     <Link to='/formularioTema' className='text-decorator-none'>
-                    <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#e14649" }}>
-                        Inserir novo tema
-                    </Button>
+                        <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#e14649" }}>
+                            Inserir novo tema
+                        </Button>
                     </Link>
                 </Box>
             </Grid >
-            <Grid item xs={6} direction="row" justifyContent="flex-end" alignItems="center">
+            <Grid item xs={6} direction="row" justifyContent="flex-end" alignItems="center" className="lista-postagem-fundo">
                 <Box>
                     <ListaPostagem />
+                </Box>
+            </Grid>
+
+            <Grid item xs={3} className="sidebar">
+                <Box id="divBusca">
+                    <input type="text" id="txtBusca" placeholder="Buscar..." />
+                </Box>
+
+                <Box className="titulo-noticias">
+                    Notícias
+                   
+                    <a className="links" href=" https://www12.senado.leg.br/noticias/noticias/materias/2022/08/18/projeto-incentiva-pesquisas-sobre-violencia-contra-as-mulheres" target="_blank">
+                    <Box className="conteudo-noticias">
+
+                        <Box className="conteudo-noticias-titulo">
+                            Projeto incentiva pesquisas sobre violência contra as mulheres
+
+                        </Box>
+
+                        <Box>
+                            <img className="conteudo-noticias-foto" src="https://i.imgur.com/StzTVuM.jpg" alt="" />
+                        </Box>
+                        <Box className="conteudo-noticias-fonte">
+                            Agência Senado
+                        </Box>
+                    </Box>
+                    </a>
+                    <a className="links" href="https://pt.euronews.com/next/2022/07/29/jovens-mulheres-diminuem-a-diferenca-de-genero-no-mundo-do-trabalho" target="_blank">
+                    <Box className="conteudo-noticias">
+
+                        <Box className="conteudo-noticias-titulo">
+
+                            Jovens mulheres diminuem a diferença de gênero no mundo do trabalho
+                        </Box>
+
+                        <Box>
+                            <img className="conteudo-noticias-foto" src="https://i.imgur.com/EOsclty.jpg" alt="" />
+                        </Box>
+                        <Box className="conteudo-noticias-fonte">
+                            Euronews.
+                        </Box>
+                    </Box>
+                    </a>
+                    <a className="links" href="https://pt.euronews.com/2022/07/31/euro-2022-taca-regressa-a-inglaterra-pela-mao-da-selecao-feminina" target="_blank">
+                        <Box className="conteudo-noticias">
+
+                            <Box className="conteudo-noticias-titulo">
+
+                                Euro 2022: Taça regressa a Inglaterra pela mão da seleção feminina
+                            </Box>
+
+                            <Box>
+                                <img className="conteudo-noticias-foto" src="https://i.imgur.com/6Q3MWDM.png" alt="" />
+                            </Box>
+                            <Box className="conteudo-noticias-fonte">
+                                Euronews.
+                            </Box>
+                        </Box>
+                    </a>
                 </Box>
             </Grid>
         </Grid>
