@@ -76,8 +76,8 @@ function Perfil() {
                 </Box>
                 <Box className="button-container">
                     <Link to='/formularioPostagem' className='text-decorator-none'>
-                        <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#a9aea9" }}>
-                            Inserir nova postagem
+                        <Button variant="contained" className="criarPost" size="small" color="primary" style={{position: 'fixed', backgroundColor: "#ef9aa8" }}>
+                            +
                         </Button>
                     </Link>
                     {/* <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#dbaa53" }}>
@@ -103,38 +103,38 @@ function Perfil() {
 
                 <Box className="titulo-noticias">
                     Notícias
-                   
+
                     <a className="links" href=" https://www12.senado.leg.br/noticias/noticias/materias/2022/08/18/projeto-incentiva-pesquisas-sobre-violencia-contra-as-mulheres" target="_blank">
-                    <Box className="conteudo-noticias">
+                        <Box className="conteudo-noticias">
 
-                        <Box className="conteudo-noticias-titulo">
-                            Projeto incentiva pesquisas sobre violência contra as mulheres
+                            <Box className="conteudo-noticias-titulo">
+                                Projeto incentiva pesquisas sobre violência contra as mulheres
 
-                        </Box>
+                            </Box>
 
-                        <Box>
-                            <img className="conteudo-noticias-foto" src="https://i.imgur.com/StzTVuM.jpg" alt="" />
+                            <Box>
+                                <img className="conteudo-noticias-foto" src="https://i.imgur.com/StzTVuM.jpg" alt="" />
+                            </Box>
+                            <Box className="conteudo-noticias-fonte">
+                                Agência Senado
+                            </Box>
                         </Box>
-                        <Box className="conteudo-noticias-fonte">
-                            Agência Senado
-                        </Box>
-                    </Box>
                     </a>
                     <a className="links" href="https://pt.euronews.com/next/2022/07/29/jovens-mulheres-diminuem-a-diferenca-de-genero-no-mundo-do-trabalho" target="_blank">
-                    <Box className="conteudo-noticias">
+                        <Box className="conteudo-noticias">
 
-                        <Box className="conteudo-noticias-titulo">
+                            <Box className="conteudo-noticias-titulo">
 
-                            Jovens mulheres diminuem a diferença de gênero no mundo do trabalho
-                        </Box>
+                                Jovens mulheres diminuem a diferença de gênero no mundo do trabalho
+                            </Box>
 
-                        <Box>
-                            <img className="conteudo-noticias-foto" src="https://i.imgur.com/EOsclty.jpg" alt="" />
+                            <Box>
+                                <img className="conteudo-noticias-foto" src="https://i.imgur.com/EOsclty.jpg" alt="" />
+                            </Box>
+                            <Box className="conteudo-noticias-fonte">
+                                Euronews.
+                            </Box>
                         </Box>
-                        <Box className="conteudo-noticias-fonte">
-                            Euronews.
-                        </Box>
-                    </Box>
                     </a>
                     <a className="links" href="https://pt.euronews.com/2022/07/31/euro-2022-taca-regressa-a-inglaterra-pela-mao-da-selecao-feminina" target="_blank">
                         <Box className="conteudo-noticias">
@@ -154,6 +154,10 @@ function Perfil() {
                     </a>
                 </Box>
             </Grid>
+
+     
+               
+
         </Grid>
     )
 }

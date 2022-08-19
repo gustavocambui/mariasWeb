@@ -210,7 +210,7 @@ function Sobre() {
                                           </Box>
 
                                           <Box className="profissao-individual">
-                                                Desenvolvedora Back-End
+                                                Desenvolvedora Full-Stack
                                           </Box>
 
                                           <Box>

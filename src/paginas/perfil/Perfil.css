@@ -48,7 +48,7 @@
 
 #divBusca{
   margin: 20px;
-  background-color:rgb(250, 228, 231);
+  background-color: #eaeaea;
   border:solid 1px;
   border-radius:15px;
   width:350px;
@@ -71,7 +71,7 @@
 .titulo-noticias{
   font-size: 30px;
   font-weight: bold;
-  background-color: #e6e3dd;
+  background-color: #eaeaea;
   border-radius: 10px;
   padding-left: 10px;
    margin-right: 10px;
@@ -104,4 +104,14 @@ font-weight: bold;
 .links{
   text-decoration: none;
   color: black;
+}
+
+.criarPost{
+  width: 100px;
+  height: 100px;
+  color: white;
+  font-size: 50px!important;
+  border-radius: 200px!important;
+  left: 40px;
+  bottom: 10px;
 }

@@ -23,15 +23,15 @@ function Footer() {
         <Grid alignItems="center" item xs={12} >
 
            
-            <Box className="row"style={{backgroundColor: "#ef9aa8", height: "120px" }}>
+      <Box className="row"style={{backgroundColor: "#ef9aa8", height: "120px" }}>
                 
-                <Box className="logo-copyright">
-                <Box className='logo-footer'>
+        <Box className="logo-copyright">
+          <Box className='logo-footer'>
                 <img src="https://i.imgur.com/8QXUwf2.png"alt="Logo" width={'80px'} height={'80px'} />
 
                 <p>Maria's Web</p>
                 
-                <Box>
+             <Box>
 
 
                 <Box paddingLeft={'1000px'} display="flex" alignItems="center" justifyContent="flex-end">
@@ -52,7 +52,7 @@ function Footer() {
                 </Box>
                 </Box>
                 
-                </Box>
+             </Box>
 
                 <Box paddingTop={1}>
                    
