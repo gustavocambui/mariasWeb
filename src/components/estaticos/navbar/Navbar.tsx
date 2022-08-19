@@ -42,7 +42,7 @@ function Navbar() {
     if (token != "") {
         navbarComponent =
 
-            <AppBar position="static" >
+            <AppBar  >
                 <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
                     <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
