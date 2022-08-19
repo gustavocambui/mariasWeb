@@ -49,12 +49,43 @@ function Home() {
                     <img src="https://media.discordapp.net/attachments/993484965914345526/1004734424870555719/WhatsApp_Image_2022-08-04_at_09.53.00-removebg-preview.png" alt="" width='700px' height='500px' />  */}
                 {/* </Grid>  */}
 
+                <Grid container xs={12}>
 
+                    <Grid item xs={1} className="box-missao-lateral"></Grid>
+
+                    <Grid item xs={10}>
+                        <Box className="box-missao">
+
+                            <Box className="box-missao-titulo">
+                                Nossa missão
+                            </Box>
+
+                        
+
+                            <Box className="box-missao-texto">
+
+
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                <Box className="box-missao-texto-foto">
+                                    <img src="https://i.imgur.com/XDdVOFZ.jpeg" alt="" width={'300px'} height={'300px'} />
+                                </Box>
+                            </Box>
+
+                        </Box>
+                    </Grid>
+
+                    <Grid item xs={1} className="box-missao-lateral"></Grid>
+
+                </Grid>
                 <Grid container xs={12} className='postagens'>
 
-                    <Grid item xs={12} className="inspiracoes">
+                    <Grid item xs={1}></Grid>
+
+                    <Grid item xs={10} className="inspiracoes">
                         <h1 className="inspiracoesTitulo">Conheça histórias de mulheres inspiradoras</h1>
                     </Grid>
+
+                    <Grid item xs={1}></Grid>
 
                     <Grid item xs={6} className="margaret" >
 
