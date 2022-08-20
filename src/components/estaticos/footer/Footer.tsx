@@ -17,62 +17,40 @@ function Footer() {
     var footerComponent;
 
     if (token != "") {
-        footerComponent = 
-        <Grid container direction="row" justifyContent="center" alignItems="center" className="row">
+        footerComponent =
+            <Grid container xs={12} className="container" direction="row">
 
-        <Grid alignItems="center" item xs={12} >
+                <Grid item xs={2}>
+                    <img className='imgLogo' src="https://i.imgur.com/8QXUwf2.png" alt="Logo" />
+                </Grid>
+                <Grid item xs={2}>
+                    <p className='textLogo'>Maria's Web</p>
+                </Grid>
 
-           
-      <Box className="row"style={{backgroundColor: "#ef9aa8", height: "120px" }}>
-                
-        <Box className="logo-copyright">
-          <Box className='logo-footer'>
-                <img src="https://i.imgur.com/8QXUwf2.png"alt="Logo" width={'80px'} height={'80px'} />
+                <Grid item xs={6}>
 
-                <p>Maria's Web</p>
-                
-             <Box>
+                </Grid>
 
+                <Grid item xs={2}>
+                    <Box className='textRedesSociais'>
+                        <p>Fale conosco:</p>
+                    </Box>
 
-                <Box paddingLeft={'1000px'} display="flex" alignItems="center" justifyContent="flex-end">
-                    <Typography variant="h6" align="center" gutterBottom style={{ color: "white" }}>
-                       Redes sociais: 
-                        </Typography>
-                </Box>
-                <Box paddingLeft={'1400px'} display="flex" alignItems="center" justifyContent="flex-end">
-                    <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
-                        <FacebookIcon style={{ fontSize: 30, color: "white" }} />
-                    </a>
-                    <a href="https://www.instagram.com/marias_web/" target="_blank">
-                        <InstagramIcon style={{ fontSize: 30, color: "white" }} />
-                    </a>
-                    <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
-                        <GitHubIcon style={{ fontSize: 30, color: "white" }} />
-                    </a>
-                </Box>
-                </Box>
-                
-             </Box>
+                    <Box className="redesSociais">
+                        <a href="https://www.facebook.com/Marias-Web-111470941659330/?ref=page_internal" target="_blank">
+                            <FacebookIcon style={{ fontSize: 30, color: "white" }} />
+                        </a>
+                        <a href="https://www.instagram.com/marias_web/" target="_blank">
+                            <InstagramIcon style={{ fontSize: 30, color: "white" }} />
+                        </a>
+                        <a href="https://github.com/gustavocambui/mariasWeb" target="_blank">
+                            <GitHubIcon style={{ fontSize: 30, color: "white" }} />
+                        </a>
+                    </Box>
+                </Grid>
 
-                <Box paddingTop={1}>
-                   
-                </Box>
-               
-              
-
-
-               
-            </Box>
-            </Box>
-            <Box style={{ backgroundColor: "#ef9aa8", height: "60px" }}>
-              
-               
-                
-            </Box>
-        </Grid>
-    </Grid>
+            </Grid>
     }
-
     return (
         <>
             {footerComponent}

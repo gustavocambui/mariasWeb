@@ -76,7 +76,7 @@ function Perfil() {
                 </Box>
                 <Box className="button-container">
                     <Link to='/formularioPostagem' className='text-decorator-none'>
-                        <Button variant="contained" className="criarPost" size="small" color="primary" style={{position: 'fixed', backgroundColor: "#ef9aa8" }}>
+                        <Button variant="contained" className="criarPost" size="small" color="primary">
                             +
                         </Button>
                     </Link>

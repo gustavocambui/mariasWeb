@@ -1,28 +1,25 @@
-.logo-footer {
-  padding-left: 60px;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  font-size: 40px;
-  color: white;
-}
-.logo-footer4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  font-size: 40px;
-  color: white;
+.container{
+  background-color: #ef9aa8;
+  height: 150px;
+  align-items: center!important;
 }
 
-.logo-copyright {
-  display: flex;
-  flex-direction: column;
+.imgLogo{
+  width: 80px!important;
+  height: 80px!important;
+  padding-top: 10px;
+  padding-left: 130px;
 }
 
-.row {
-  flex-direction: row;
-  justify-content: space-between;
+.textLogo{
+  color: white;
+  font-size: 40px;
+}
+
+.redesSociais{
+  gap: 5px;
+}
+
+.textRedesSociais{
+  color: white;
 }
