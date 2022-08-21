@@ -40,7 +40,7 @@ function Login() {
     useEffect(() => {
         if (token !== "") {
             dispatch(addToken(token));
-            navigate('/home')
+            navigate('/feed')
         }
     }, [token])
 
@@ -62,7 +62,7 @@ function Login() {
 
             dispatch(addToken(respUserLogin.token))
             dispatch(addId(respUserLogin.id.toString()))
-            navigate('/home')
+            navigate('/feed')
         }
     }, [respUserLogin.token])
 

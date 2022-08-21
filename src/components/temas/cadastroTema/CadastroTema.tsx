@@ -104,7 +104,7 @@ function CadastroTema() {
     }
 
     function back() {
-        navigate('/perfil')
+        navigate('/feed')
     }
 
     return (

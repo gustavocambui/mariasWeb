@@ -89,7 +89,7 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to='/perfil' className='text-decorator-none'>
+                        <Link to='/feed' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     <AccountCircleIcon />

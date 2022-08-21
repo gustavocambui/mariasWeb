@@ -129,7 +129,7 @@ function CadastroPost() {
     }
 
     function back() {
-        navigate('/perfil')
+        navigate('/feed')
     }
 
     return (
