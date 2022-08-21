@@ -64,14 +64,16 @@ function Perfil() {
         <Grid container >
             <Grid item xs={3} direction="row" className="card-principal">
                 <Box className='card-container-info'>
-                    <Box >
-                        <h1>{user.nome}</h1>
-                    </Box>
+
 
                     <Avatar className='card-imagem'
                         src={user.foto || "https://i.imgur.com/7dkreWW.jpg"}
                         sx={{ width: 150, height: 150 }}
                         alt={user.nome} />
+
+                    <Box >
+                        <h1>{user.nome}</h1>
+                    </Box>
 
                 </Box>
                 <Box className="button-container">
@@ -155,8 +157,8 @@ function Perfil() {
                 </Box>
             </Grid>
 
-     
-               
+
+
 
         </Grid>
     )
