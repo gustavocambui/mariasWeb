@@ -1,3 +1,9 @@
 .text-decorator-none {
   text-decoration: none;
 }
+
+.card{
+  background-color: rgb(253, 248, 248)!important;
+  border-bottom: rgb(192, 192, 192) solid 0.1px;
+  border-top: rgb(192, 192, 192) solid 0.1px;
+}

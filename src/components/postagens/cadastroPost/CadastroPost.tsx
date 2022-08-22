@@ -125,11 +125,11 @@ function CadastroPost() {
             });
         }
         back()
-
+        
     }
 
     function back() {
-        navigate('/posts')
+        navigate('/feed')
     }
 
     return (
@@ -156,7 +156,7 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Button type="submit" variant="contained" color="primary">
+                    <Button type="submit" variant="contained" color="primary" className="botao-finalizar">
                         Finalizar
                     </Button>
                 </FormControl>

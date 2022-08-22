@@ -1,0 +1,25 @@
+.container{
+  background-color: #ef9aa8;
+  height: 150px;
+  align-items: center!important;
+}
+
+.imgLogo{
+  width: 80px!important;
+  height: 80px!important;
+  padding-top: 10px;
+  padding-left: 130px;
+}
+
+.textLogo{
+  color: white;
+  font-size: 40px;
+}
+
+.redesSociais{
+  gap: 5px;
+}
+
+.textRedesSociais{
+  color: white;
+}

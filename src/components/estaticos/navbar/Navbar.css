@@ -18,3 +18,17 @@
 
   padding-top: 1.5%;
 }
+
+.icones{
+  align-items: center;
+  /* padding-right: 200px; */
+}
+
+.logo{
+  /* padding-left: 200px; */
+font-family: 'Dancing Script', cursive!important;
+}
+
+.MuiTypography-h2{
+  
+}

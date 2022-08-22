@@ -9,6 +9,13 @@ import { UserState } from '../../../store/tokens/tokensReducer';
 import { Action, addToken } from '../../../store/tokens/actions';
 import { toast } from "react-toastify";
 
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import EventAvailableIcon from '@mui/icons-material/EventAvailable';
+import SettingsIcon from '@mui/icons-material/Settings';
+
 function Navbar() {
 
     let navigate = useNavigate();
@@ -37,58 +44,87 @@ function Navbar() {
     if (token != "") {
         navbarComponent =
 
-            <AppBar position="static">
-                <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#5d2019" }}>
-                    <Box display="flex" justifyContent="start" style={{ cursor: "pointer" }} >
+            <AppBar position='static' >
+                <Toolbar variant="dense" style={{ display: "flex", justifyContent: "space-between", backgroundColor: "#ef9aa8", alignItems: 'center' }}>
+                    <Box display="flex" justifyContent="start" className="logo" style={{ cursor: "pointer", alignItems: 'center' }} >
 
                         <Link to="home" className='text-decorator-none'>
-                            <Box mx={1} style={{ cursor: "pointer" }}>
+                            <Box mx={1} style={{ cursor: "pointer", display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '15px' }}>
+                                <img src="https://i.imgur.com/8QXUwf2.png" alt="Logo" width={'40px'} height={'40px'} />
                                 <Typography variant="h6" color="inherit">
                                     Maria's Web
                                 </Typography>
                             </Box>
                         </Link>
 
-                        <Link to='/posts' className='text-decorator-none'>
+                        {/* <Link to='/posts' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Postagens
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
-                        <Link to='/tema' className='text-decorator-none'>
+                        {/* <Link to='/tema' className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
                                     Temas
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
-                        <Link to='/perfil' className='text-decorator-none'>
+
+
+
+
+                    </Box>
+
+                    <Box display="flex" justifyContent="start" className="icones">
+
+                    <Link to="home" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="h6" color="inherit">
-                                    Perfil
+                                   <HomeIcon/>
                                 </Typography>
                             </Box>
                         </Link>
 
+                        <Link to='/feed' className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="h6" color="inherit">
+                                    <AccountCircleIcon />
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                        <Link to="nada" className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
+                                <Typography variant="h6" color="inherit">
+                                    <EventAvailableIcon />
+                                </Typography>
+                            </Box>
+                        </Link>
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit">
-                                    Sobre Nós
+                                    <InfoIcon />
                                 </Typography>
                             </Box>
                         </Link>
-                    </Box>
 
-                    <Box display="flex" justifyContent="start">
+                        <Link to="nada" className='text-decorator-none'>
+                            <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
+                                <Typography variant="h6" color="inherit">
+                                    <SettingsIcon />
+                                </Typography>
+                            </Box>
+                        </Link>
 
                         <Link to="login" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit" onClick={goLogout}>
-                                    Logout
+                                   <PowerSettingsNewIcon/>
                                 </Typography>
                             </Box>
 

@@ -1,29 +1,29 @@
 .botoes{
   border-color: white !important;
   border-radius: 20px !important;
-  background-color: #5D2019!important;
+  background-color: #ef9aa8!important;
   color: white !important;    
 }
 
 .botoes:hover{
-  background-color: #CEBCBA !important;
+  background-color: #feccd7 !important;
 }
 
 .textos2{
   font-weight: bold !important;
-  color: white;
+  color: black;
 }
 
 .texto2{
   font-weight: bold !important;
-  color: white!important;
+  color: black!important;
   padding-bottom: 15px;
-  border-bottom: white solid 0.1px;
+  border-bottom: black  0.1px;
 }
 
 
 .box3{
-  background-color:#CEBCBA!important;
+  background-color:#f9e9e9!important;
   padding-top: 20px!important;
   padding-bottom: 20px!important; 
   border-radius: 150px!important; 
@@ -37,7 +37,7 @@
 }
 
 .imagem2{
-  background-image: url(https://i.imgur.com/KtHAm1z.png);
+  background-image: url(https://i.imgur.com/fy08xEF.png);
   background-repeat: no-repeat;
   width: 100vh;
   height: 100vh;
@@ -50,7 +50,7 @@
 }
 
 .cor-fundo{
-  background-color: #faf9f6;
+  background-color: #f9e9e9;
 }
 
 .alinhar-box{

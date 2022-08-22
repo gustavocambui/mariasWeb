@@ -40,7 +40,7 @@ function Login() {
     useEffect(() => {
         if (token !== "") {
             dispatch(addToken(token));
-            navigate('/home')
+            navigate('/feed')
         }
     }, [token])
 
@@ -62,7 +62,7 @@ function Login() {
 
             dispatch(addToken(respUserLogin.token))
             dispatch(addId(respUserLogin.id.toString()))
-            navigate('/home')
+            navigate('/feed')
         }
     }, [respUserLogin.token])
 
@@ -99,7 +99,7 @@ function Login() {
 
     return (
         <Grid className='box-form' container direction='row' justifyContent='center' alignItems='center'>
-            <Grid xs={12} className="imagem centralizar" justifyContent='center' >
+            <Grid xs={12} className="imagem-login centralizar" justifyContent='center' >
                 <Grid alignItems='center' xs={4} justifyContent='center' >
                     <Box paddingX={20} className='box'>
                         <form onSubmit={onSubmit} className='box'>
@@ -113,7 +113,7 @@ function Login() {
                                     Login
                                 </Button>
                                 <b className="form-ou"> OU</b>
-                                <Link to='/cadastrousuario'>
+                                <Link to='/cadastrousuario' className="link-cadastro">
                                     <Button type='submit' variant='contained' className='botao'>
                                         Cadastre-se
                                     </Button>

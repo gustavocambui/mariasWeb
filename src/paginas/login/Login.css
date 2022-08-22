@@ -1,13 +1,13 @@
 .textos {
   font-weight: bold !important;
   text-decoration: none !important;
-  color: white !important;
+  color: black !important;
   padding-bottom: 15px;
-  border-bottom: white solid 0.1px;
+  border-bottom: black 0.1px;
 }
 
 .box {
-  background-color: #cebcba !important;
+  background-color: #f9e9e9 !important;
   /* padding-top: 20px!important;
   padding-bottom: 20px!important;  /
   border-radius: 150px!important; 
@@ -16,6 +16,7 @@
   margin-right: 20px;  */
   display: block;
   box-sizing: border-box;
+  border-radius: 50px;
   padding: 1.5rem !important;
 }
 
@@ -28,17 +29,17 @@
 .botao {
   border-color: white;
   border-radius: 20px;
-  background-color: #5d2019 !important;
+  background-color: #ef9aa8 !important;
   color: white;
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 .botao:hover {
-  background-color: #cebcba !important;
+  background-color: #feccd7 !important;
 }
 
-.imagem {
-  background-image: url(https://i.imgur.com/XNrzBKr.png);
+.imagem-login {
+  background-image: url(https://i.imgur.com/P0Yt8eM.png);
   background-repeat: no-repeat;
   width: 100vh;
   height: 100vh;
@@ -58,4 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.link-cadastro{
+  text-decoration: none;
 }
