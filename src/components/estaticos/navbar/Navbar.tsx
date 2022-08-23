@@ -97,13 +97,13 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to="nada" className='text-decorator-none'>
+                        {/* <Link to="nada" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit">
                                     <EventAvailableIcon />
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
                         <Link to="sobreNos" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
@@ -113,13 +113,13 @@ function Navbar() {
                             </Box>
                         </Link>
 
-                        <Link to="nada" className='text-decorator-none'>
+                        {/* <Link to="nada" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>
                                 <Typography variant="h6" color="inherit">
                                     <SettingsIcon />
                                 </Typography>
                             </Box>
-                        </Link>
+                        </Link> */}
 
                         <Link to="login" className='text-decorator-none'>
                             <Box mx={1} style={{ cursor: "pointer", color: 'white' }}>

@@ -86,7 +86,7 @@ function Perfil() {
                         Inserir nova postagem
                     </Button> */}
                     <Link to='/formularioTema' className='text-decorator-none'>
-                        <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#e14649" }}>
+                        <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#ef9aa8" }}>
                             Inserir novo tema
                         </Button>
                     </Link>
