@@ -38,7 +38,7 @@ function Home() {
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="link-postagens">
-                            <Button variant='outlined' className='botao' style={{ backgroundColor: '#8f1f37', color: 'white' }}>
+                            <Button variant='outlined' className='botaoVerPostagens' style={{ backgroundColor: '#8f1f37', color: 'white' }}>
                                 Ver Postagens
                             </Button>
                         </Link>
@@ -65,7 +65,7 @@ function Home() {
                             <Box className="box-missao-texto">
 
 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                            Projeto baseado na ODS 5 que diz respeito a igualdade de gênero e tem por objetivo acabar com a discriminação contra todas as mulheres e meninas. A Marias's Web é uma rede social direcionada para mulheres em que elas poderão compartilhar experiências positivas de situações que muitas mulheres já passaram ou estão passando, formando assim uma forte rede de apoio em que mulheres poderão se inspirar através de histórias de conquistas e superação.
                                 <Box className="box-missao-texto-foto">
                                     <img src="https://i.imgur.com/9NfqFju.png" alt="" width={'500px'} height={'300px'} style={{borderRadius: '200px'}} />
                                 </Box>

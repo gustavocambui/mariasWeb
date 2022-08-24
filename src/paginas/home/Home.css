@@ -85,6 +85,11 @@ padding-top: 250px;
   margin-top: 100px;
 }
 
+.botaoVerPostagens{
+  background-color: #e47f7f!important;
+  color: #ffe6e6!important;
+}
+
 .box-missao{
   background-color: #ef9aa8;
   justify-content: center;

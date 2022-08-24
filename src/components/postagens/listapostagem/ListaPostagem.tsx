@@ -9,6 +9,7 @@ import { UserState } from "../../../store/tokens/tokensReducer";
 import { busca } from "../../../services/Service";
 import { toast } from "react-toastify";
 import Perfil from "../../../paginas/perfil/Perfil";
+import { format } from "date-fns";
 
 function ListaPostagem() {
   const [posts, setPosts] = useState<Postagem[]>([])
@@ -57,7 +58,7 @@ function ListaPostagem() {
             <Card  className="card">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  {post.date}
+                  {format(new Date(post.date), 'dd/MM/yyyy kk:mm:ss')}
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
@@ -74,15 +75,15 @@ function ListaPostagem() {
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size="small" color="primary" style={{ backgroundColor: "#a9aea9" }}>
-                        atualizar
+                      <Button variant="contained" className="btAtualizar" size="small" color="primary" >
+                        Atualizar
                       </Button>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size="small" color="secondary" style={{ backgroundColor: "#e14649" }}>
-                        deletar
+                      <Button className="btDeletar" variant="contained" size="small" color="secondary">
+                        Deletar
                       </Button>
                     </Box>
                   </Link>

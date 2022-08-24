@@ -109,12 +109,12 @@ function Login() {
                             <TextField style={{ backgroundColor: 'white' }} value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='Usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
                             <TextField style={{ backgroundColor: 'white' }} value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                             <Box marginTop={2} textAlign='center'>
-                                <Button type='submit' variant='contained' color='primary' className='botao'>
+                                <Button type='submit' variant='contained' color='primary' className='botaoLogin'>
                                     Login
                                 </Button>
                                 <b className="form-ou"> OU</b>
                                 <Link to='/cadastrousuario' className="link-cadastro">
-                                    <Button type='submit' variant='contained' className='botao'>
+                                    <Button type='submit' variant='contained' className='botaoCadastro'>
                                         Cadastre-se
                                     </Button>
                                 </Link>

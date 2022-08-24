@@ -26,13 +26,23 @@
   padding-right: 10px;
 }
 
-.botao {
+.botaoLogin {
   border-color: white;
   border-radius: 20px;
-  background-color: #ef9aa8 !important;
-  color: white;
+  background-color: #ffe6e6!important;
+  color: #b36b6b!important;
   text-decoration: none!important;
 }
+
+.botaoCadastro {
+  border-color: white;
+  border-radius: 20px;
+  background-color: #e47f7f!important;
+  color: #ffe6e6!important;
+  text-decoration: none!important;
+}
+
+
 
 .botao:hover {
   background-color: #feccd7 !important;
