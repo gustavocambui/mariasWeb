@@ -60,14 +60,25 @@ function Home() {
                                 Nossa missão
                             </Box>
 
-                        
+
 
                             <Box className="box-missao-texto">
-
-
-                            Projeto baseado na ODS 5 que diz respeito a igualdade de gênero e tem por objetivo acabar com a discriminação contra todas as mulheres e meninas. A Marias's Web é uma rede social direcionada para mulheres em que elas poderão compartilhar experiências positivas de situações que muitas mulheres já passaram ou estão passando, formando assim uma forte rede de apoio em que mulheres poderão se inspirar através de histórias de conquistas e superação.
+                                <div>
+                                <p>
+                                A proposta do Maria's Web é oferecer conteúdos relevantes através das expêriencias já vivenciadas por mulheres logadas na plataforma, que podem servir de apoio e incentivo para o desenvolvimento daquelas que tem um propósito e buscam a motivação e inspiração que precisam.
+                                </p>
+                                <p>
+                                Propósito: Motivar cada mulher a alcançar seus sonhos e objetivos.
+                                </p>
+                                <p>
+                                Missão: O Maria’s Web existe para manter, encorajar e desafiar às mulheres em suas experiências diárias.
+                                </p>
+                                <p>
+                                Visão: Ser uma plataforma que promova motivações e inspirações para que as mulheres realizem seus objetivos.
+                                </p>
+                                </div>
                                 <Box className="box-missao-texto-foto">
-                                    <img src="https://i.imgur.com/9NfqFju.png" alt="" width={'500px'} height={'300px'} style={{borderRadius: '200px'}} />
+                                    <img src="https://i.imgur.com/9NfqFju.png" alt="" width={'500px'} height={'300px'} style={{ borderRadius: '200px' }} />
                                 </Box>
                             </Box>
 
