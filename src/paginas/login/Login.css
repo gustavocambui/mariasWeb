@@ -6,24 +6,16 @@
   border-bottom: black 0.1px;
 }
 
-.box {
-  background-color: #f9e9e9 !important;
-  /* padding-top: 20px!important;
-  padding-bottom: 20px!important;  /
-  border-radius: 150px!important; 
-  color: black!important;
-  / margin-left: 20px;
-  margin-right: 20px;  */
-  display: block;
-  box-sizing: border-box;
-  border-radius: 50px;
-  padding: 1.5rem !important;
+.box-shadow-effect {
+  box-shadow: 1px 1px 8px #cfcfcf;
 }
 
-.form-ou {
-  color: black !important;
-  padding-left: 5px;
-  padding-right: 10px;
+.box {
+  background-color: white;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 1.5rem !important;
 }
 
 .botaoLogin {
@@ -32,6 +24,7 @@
   background-color: white!important;
   color: #b36b6b!important;
   text-decoration: none!important;
+  margin-right: 15px !important;
 }
 
 .botaoCadastro {
@@ -49,7 +42,7 @@
 }
 
 .imagem-login {
-  background-image: url(https://i.imgur.com/P0Yt8eM.png);
+  background-image: url("./../../assets/fundo-nuvens.jpg");
   background-repeat: no-repeat;
   width: 100vh;
   height: 100vh;
@@ -61,9 +54,6 @@
   text-decoration: none;
 }
 
-.box-form {
-  background-color: #faf9f6;
-}
 
 .centralizar {
   display: flex;

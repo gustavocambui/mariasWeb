@@ -117,14 +117,14 @@ function CadastroUsuario() {
               <TextField style={{ backgroundColor: 'white' }} value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id="confirmarSenha" label="Confirmar Senha" variant="outlined" name="confirmarSenha" margin="normal" type="password" fullWidth required />
               <TextField style={{ backgroundColor: 'white' }} value={user.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="foto" label="Foto" variant="outlined" name="foto" margin="normal" fullWidth type="text" />
               <Box marginTop={2} textAlign="center">
+                <Button type="submit" variant="contained" color="primary" className="botoes btCadastrar">
+                  Cadastrar
+                </Button>
                 <Link to="/login" className="text-decorator-none">
-                  <Button variant="contained" color="secondary" className="botoes" >
+                  <Button variant="contained" color="secondary" className="botoes btCancelar" >
                     Cancelar
                   </Button>
                 </Link>
-                <Button type="submit" variant="contained" color="primary" className="botoes">
-                  Cadastrar
-                </Button>
               </Box>
             </form>
           </Box>

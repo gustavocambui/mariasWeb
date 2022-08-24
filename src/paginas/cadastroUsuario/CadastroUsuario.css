@@ -1,8 +1,15 @@
 .botoes{
-  border-color: white !important;
-  border-radius: 20px !important;
-  background-color: #ef9aa8!important;
-  color: white !important;    
+  border-radius: 5px !important;
+}
+
+.btCadastrar{
+  background-color: #ffe6e6!important;
+  color: #b36b6b!important;
+}
+
+.btCancelar{
+  background-color: #e47f7f!important;
+  color: #ffe6e6!important;
 }
 
 .botoes:hover{
@@ -21,12 +28,11 @@
   border-bottom: black  0.1px;
 }
 
-
 .box3{
-  background-color:#f9e9e9!important;
+  background-color:white!important;
   padding-top: 20px!important;
   padding-bottom: 20px!important; 
-  border-radius: 150px!important; 
+  border-radius: 15px!important; 
   color: black!important;
   margin-left: 20px;
   margin-right: 20px;  
@@ -34,19 +40,16 @@
   box-sizing: border-box;
   padding: 1.5rem!important;    
   width: 500px;
+  box-shadow: 1px 1px 3px rgb(184, 184, 184);
 }
 
 .imagem2{
-  background-image: url(https://i.imgur.com/fy08xEF.png);
+  background-image: url("./../../assets/fundo-nuvens.jpg");
   background-repeat: no-repeat;
   width: 100vh;
   height: 100vh;
-  background-size: 100%;
-  background-position: cover;
-}
-
-.btnCancelar{
-  margin-right: 20px !important; 
+  background-size: cover;
+  background-position: center;
 }
 
 .cor-fundo{
@@ -57,5 +60,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 700px;
+  padding-left: 270px;
 }
